@@ -1,10 +1,12 @@
+// jshint esversion: 6
+
 const express = require('express');
 const app = express();
 const path = require('path')
 const bodyParser = require('body-parser');
 const mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient;
-const URI = process.env.MONGODB_URI || 'mongodb://heroku_08879xmq:hh9bico0pvib5tumb1f6vsohj@ds257054.mlab.com:57054/heroku_08879xmq';
+const URI = process.env.MONGODB_URI || '"mongodb://127.0.0.1:27017/anycard_dbq';
 const PORT = process.env.PORT || 5000;
 const DB_NAME = process.env.DB_NAME;
 
